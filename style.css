@@ -4,12 +4,43 @@
   padding: 0;
 }
 
+.sister-bar {
+  display: block;
+  width: 100%;
+  background-color: #fbeee9;
+  color: #cc785c;
+  text-align: center;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.sister-bar:hover {
+  background-color: #f5ddd5;
+}
+
+.sister-bar .arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.sister-bar:hover .arrow {
+  transform: translateX(4px);
+}
+
 body {
   background-color: #f4f6fb;
   font-family: 'Inter', Arial, sans-serif;
   color: #1a1830;
   min-height: 100vh;
-  padding: 72px 24px 80px;
+  padding: 108px 24px 80px;
   text-align: center;
 }
 
